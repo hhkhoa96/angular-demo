@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-southeast-1'
         S3_BUCKET = 'my-frontend-bucket'
-        NODEJS_HOME = tool name: 'NodeJS 18', type: 'NodeJSInstallation'
+        NODEJS_HOME = tool name: 'NodeJS 22', type: 'NodeJSInstallation'
         PATH = "${NODEJS_HOME}/bin:${env.PATH}"
     }
 
