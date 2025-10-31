@@ -4,8 +4,8 @@ pipeline {
     environment {
         AWS_REGION = 'ap-southeast-1'
         S3_BUCKET = 'my-frontend-bucket'
-        NODEJS_HOME = tool name: 'NodeJS', type: 'NodeJSInstallation'
-        PATH = "${NODEJS_HOME}/bin:${env.PATH}"
+        // NODEJS_HOME = tool name: 'NodeJS', type: 'NodeJSInstallation'
+        // PATH = "${NODEJS_HOME}/bin:${env.PATH}"
     }
 
     stages {
