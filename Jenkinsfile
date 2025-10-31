@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "/var/jenkins_home/.nvm/versions/node/v22.21.1/bin:${env.PATH}"
+    }
+
     stages {
         stage('Checkout') {
             steps {
